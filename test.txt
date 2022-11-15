@@ -1,0 +1,18 @@
+score;compteur;prix
+0;x2;5
+1;x2;5
+0;x3;10   !!! 
+7;x3;10 !! 2;x3;10
+0;x4;40
+0;x5;80
+
+tous les score=5, compteur+1
+
+la 1ere fois sur prix : prix*2(5), compteur+1, score-5
+la 2ere fois sur prix : prix*2(10), compteur+1, score-10
+
+
+//scoreaffiche=0 1 2 3 4 5 : compteuraffiche=2; prixaffiche=5
+//scoreaffiche=0 2 4 6 8  ; compteuraffiche=3; prixaffiche=10
+//scoreaffichage=0 3 6 9 12 : compteuraffiche=4; prixaffiche=20
+//scoreaffichage=0 4 8 12 16 : compteuraffiche=5; prixaffiche=20
