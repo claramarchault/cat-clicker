@@ -106,6 +106,11 @@ function pluiecroquette() {
 
     const NB_croquette = 30;
 
+    // if (score >= 10){
+    //     document.querySelector('#chat').addEventListener('click',pluiecroquette);
+    //     return;
+    // }
+
     for (let index = 0; index < NB_croquette; index++){
         const element = document.createElement('img')
         element.src = 'images/croquette.png'
@@ -117,6 +122,7 @@ function pluiecroquette() {
         element.style.top = y + 'vh';
         document.querySelector('body').appendChild(element)
     }
+
 }
 
 // **************************
@@ -140,7 +146,7 @@ var compteur = 2 // prochain (affiché)
 var scoreCalc = 1 // permet d'augmenter le score affiché (sorte de ponderation)
 var prixAuto = 500
 var compteurAuto = 1
-var buttonstate=0;
+var buttonstate = 0;
 
 document.querySelector("#chat").addEventListener("mousedown", sourisEnBas)
 
@@ -150,7 +156,7 @@ document.querySelector('#chat').addEventListener('click', () => { addMiaou(), au
 
 // multiplicateur
 
-document.querySelector("#multiplier").addEventListener("click", () => { multiplierfunction(); audio1()})
+document.querySelector("#multiplier").addEventListener("click", () => {multiplierfunction(); audio1()})
 
 // autoclicker 
 
@@ -162,7 +168,7 @@ const audioElement = new Audio('miaou.mp3');
 
 const audioElement1 = new Audio('chatenerve1.mp3');
 
-// texte aleatoire
+//textes aléatoire
 
 const textes = [
     "Miaou miaou, j'ai faim", 
@@ -182,4 +188,3 @@ function textealeatoire(){
 setInterval( () => {
     document.querySelector('#text').innerHTML = textealeatoire()
 }, 10000);
-

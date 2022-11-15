@@ -150,8 +150,8 @@ h3{
 
 #nuage1{
     animation: slidenuagereverse 15s linear 0s infinite;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    // margin-bottom: 10px;
     text-align: right;
 }
 
@@ -162,6 +162,10 @@ h3{
     animation: pluiecroquette 4s linear 0s normal;
     transform: translateY(-30vh);
     width: 50px;
+}
+
+#donneeperso, #text{
+    margin-bottom: 10px;
 }
 
 

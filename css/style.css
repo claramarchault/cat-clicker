@@ -162,8 +162,7 @@ h3 {
 #nuage1 {
   -webkit-animation: slidenuagereverse 15s linear 0s infinite;
           animation: slidenuagereverse 15s linear 0s infinite;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 30px;
   text-align: right;
 }
 
@@ -175,6 +174,10 @@ h3 {
           animation: pluiecroquette 4s linear 0s normal;
   transform: translateY(-30vh);
   width: 50px;
+}
+
+#donneeperso, #text {
+  margin-bottom: 10px;
 }
 
 /* === FOOTER === *//*# sourceMappingURL=style.css.map */
