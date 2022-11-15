@@ -162,8 +162,24 @@ const audioElement = new Audio('miaou.mp3');
 
 const audioElement1 = new Audio('chatenerve1.mp3');
 
+// texte aleatoire
 
+const textes = [
+    "Miaou miaou, j'ai faim", 
+    "Plus vite, il me faut des croquettes", 
+    "Je te confie un secret : je préfère la pâté aux croquettes...",
+    "J'aime dormir sur le canapé",
+    "Mes copains chats me manquent, joue avec moi",
+    "Miaou ! Miaou !"
+]
 
+function textealeatoire(){
+    Aleatoire = Math.trunc(Math.random()*textes.lenght);
+    texteAleatoire = textes[Aleatoire];
+    return texteAleatoire
+}
 
-
+setInterval( () => {
+    document.querySelector('#text').innerHTML = textealeatoire()
+}, 10000);
 
