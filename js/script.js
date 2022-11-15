@@ -125,6 +125,12 @@ function pluiecroquette() {
 
 }
 
+function textealeatoire(){
+    Aleatoire = Math.trunc(Math.random()*textes.lenght);
+    texteAleatoire = textes[Aleatoire];
+    return texteAleatoire
+}
+
 // **************************
 
 window.onload = function alert() {
@@ -178,12 +184,6 @@ const textes = [
     "Mes copains chats me manquent, joue avec moi",
     "Miaou ! Miaou !"
 ]
-
-function textealeatoire(){
-    Aleatoire = Math.trunc(Math.random()*textes.lenght);
-    texteAleatoire = textes[Aleatoire];
-    return texteAleatoire
-}
 
 setInterval( () => {
     document.querySelector('#text').innerHTML = textealeatoire()
