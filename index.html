@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>BIBOU</title>
+    <meta name="description" content="Description de la page">
+
+    <!-- feuille de css -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <link rel="icon" type="image/png" href="images/chatsimple.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Fredoka+One&family=Londrina+Outline&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- mettre le contenu ici -->
+    <main>
+
+    <div id="intro">
+        <p class="info">Click sur le chat</p>
+
+        <h1>Bibou le chat</h1>
+
+        <div id="score">Nombre de miaou : 0</div>
+    </div>
+
+    <button class="onoff" onclick="onoff(this)"><div><i class="fa-solid fa-volume-high"></i></div></button>
+
+    <div>
+        <img id="nuage1" src="images/nuage1.png">
+    </div>
+
+
+        <section id="section1" class="container flex-container">
+
+        <div class="actions">
+            <div class="nombreMulti">
+                <h3>Multimiaou</h3>
+                <p id="compteur">X2</p>
+            </div>
+            <div class="prixMulti">
+                <h3>Prix</h3>
+                <p id="prix">5 MIAOU</p>
+            </div>
+                <button type="button" class ="boutons" id="multiplier" name="multiplier" ><span>ACHETER</span></button>
+            </div>
+
+
+            <img id="chat" src="images/chatsimple.png" alt="chat">
+
+ 
+            <div class="actions">
+                <div class="nombreAutoclicker">
+                    <h3>AutoMiaou</h3>
+                    <p id="compteurAuto">1</p>
+                </div>
+                <div class="prixAutoclicker">
+                    <h3>Prix</h3>
+                    <p id="prixAuto">500 MIAOU</p>
+                </div>
+                    <button type="button"
+                    id="autoclick" name="autoclicker" class="boutons"><span>ACHETER</span></button>
+            </div>
+    </section> 
+
+        <img id="nuage" src="images/nuage.png">
+
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
