@@ -121,6 +121,18 @@ function pluiecroquette() {
 
 // **************************
 
+window.onload = function alert() {
+
+    let name = prompt("Nom du propriétaire ?");
+
+    let space = document.getElementById("donneeperso");
+
+    space.innerHTML = name + ", dit coucou au chat";
+
+    space.classList = 'animated';
+
+}
+
 var score = 0 // score affiché
 var multiplier = 1
 var prixMultiplier = 5
